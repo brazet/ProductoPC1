@@ -1,0 +1,34 @@
+@model producto.Models.Producto
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Nuevo Producto</h1>
+
+    <form asp-controller="Producto" asp-action="Create">
+        <label asp-for="nombre" class="form-label"></label>
+        <input asp-for="nombre" class="form-control form-control-sm" type="text" placeholder="Escribe un nombre" aria-label=".form-control-sm" />
+
+        <label asp-for="categoria" class="control-label"></label>
+        <input asp-for="categoria" class="form-control" />
+
+        <label asp-for="precio" class="control-label"></label>
+        <input asp-for="precio" class="form-control" />
+
+        <label asp-for="descuento" class="control-label"></label>
+        <input asp-for="descuento" class="form-control" />
+
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Guardar</button> 
+        </div>              
+    </form>
+    <h1>@ViewData["Message"]</h1>
+    <div>
+        <a asp-action="Index">Regresar al listado</a>
+    </div>
+</div>
+© 2021 GitHub, Inc.
