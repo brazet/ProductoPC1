@@ -30,8 +30,8 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Del</a>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Edit</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.id">Del</a>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.nombre)

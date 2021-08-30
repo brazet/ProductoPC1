@@ -10,7 +10,7 @@ namespace producto.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
          [Column("id")]
-        public int Id { get; set; }
+        public int id { get; set; }
          [Column("nombre")]
         public string nombre{get;set;}
          [Column("categoria")]
